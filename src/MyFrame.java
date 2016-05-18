@@ -93,8 +93,8 @@ public class MyFrame extends JFrame
 
     private void switchingForm()
     {
-        person.recordingForm(form);
-        person.transferForm(fio);
+        form.setPerson(person);
+        fio.getPerson(person);
         fio.setProgressBar(fio.getProgressBar().getMaximum());
         setContentPane(fio.getPanelFIO());
         switching();
@@ -102,15 +102,15 @@ public class MyFrame extends JFrame
 
     public void switchingFio()
     {
-        person.splitFio(fio.getFio().getText());
-        person.transferFio(form);
+        fio.setPerson(person);
+        form.getPerson(person);
         setContentPane(form.getRootPanel());
         switching();
     }
 
     public void switching()
     {
-        validate();
-        repaint();
+        getContentPane().revalidate();
+        getContentPane().repaint();
     }
 }

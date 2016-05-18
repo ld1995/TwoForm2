@@ -9,8 +9,7 @@ public class Person
     {
 
     }
-//=======================================================================
-
+    //=======================================================================
     public Person splitFio(String fio)
     {
         String fIOUser[] = fio.split("\\s+");
@@ -29,40 +28,14 @@ public class Person
         return person;
     }
 
-    public void recordingForm(Form form)
-    {
-        setFastName(form.getFast().getText());
-        setLastName(form.getLast().getText());
-        setSecondName(form.getSecond().getText());
-    }
-
-    public void transferForm(FIO fio)
-    {
-        if (hasThreeNames())
-        {
-            fio.setFio(getFastName()+" " + getLastName()+" " + getSecondName());
-        }
-        else if (hasTwoNames())
-        {
-            fio.setFio(getFastName() + " " + getLastName());
-        }
-    }
-
-    public void transferFio(Form form)
-    {
-        form.setFast(getFastName());
-        form.setLast(getLastName());
-        form.setSecond(getSecondName());
-    }
-
-    private boolean hasThreeNames()
+   public boolean hasThreeNames()
     {
         return getLastName().trim().matches("^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$") &&
                 getFastName().trim().matches("^[А-ЯЁ][а-яё]+$") &&
                 getSecondName().trim().matches("^[А-ЯЁ][а-яё]+$");
     }
 
-    private boolean hasTwoNames()
+    public boolean hasTwoNames()
     {
         return getLastName().trim().matches("^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$") &&
                 getFastName().trim().matches("^[А-ЯЁ][а-яё]+$");

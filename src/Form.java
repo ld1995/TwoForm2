@@ -46,4 +46,19 @@ public class Form
     protected void setSecond(String second) {
         this.Second.setText(second);
     }
+
+    public void setPerson(Person person)
+    {
+       person.setFastName(getFast().getText());
+       person.setLastName(getLast().getText());
+       person.setSecondName(getSecond().getText());
+    }
+
+    public Person getPerson(Person person)
+    {
+        setFast(person.getFastName());
+        setLast(person.getLastName());
+        setSecond(person.getSecondName());
+        return person;
+    }
 }

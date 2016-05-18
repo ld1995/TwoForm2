@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5b4e920-477b-4cc1-bac5-9214be94af0d" name="Default" comment="Two form" />
+    <list default="true" id="e5b4e920-477b-4cc1-bac5-9214be94af0d" name="Default" comment="Two form">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Two Form/FIO.class" afterPath="$PROJECT_DIR$/out/production/Two Form/FIO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Two Form/MyFrame.class" afterPath="$PROJECT_DIR$/out/production/Two Form/MyFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Two Form/Person.class" afterPath="$PROJECT_DIR$/out/production/Two Form/Person.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FIO.java" afterPath="$PROJECT_DIR$/src/FIO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form.java" afterPath="$PROJECT_DIR$/src/Form.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyFrame.java" afterPath="$PROJECT_DIR$/src/MyFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/Person.java" />
+    </list>
     <list id="cae6ccaa-f1b3-4f76-b4ef-c68a93ab0b72" name="Rejected commit: Default" comment="Two form" />
     <ignored path="Two Form.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,12 +46,11 @@
       <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MyFrame#0;class#MyFrame#0" expanded="false" />
-                <element signature="class#534:704" expanded="false" />
                 <element signature="e#650#651#0" expanded="true" />
                 <element signature="e#693#694#0" expanded="true" />
                 <element signature="class#951:1322" expanded="false" />
@@ -61,13 +69,10 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+            <state relative-caret-position="272">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="method#splitFio#0;class#Person#0" expanded="false" />
-                <element signature="method#recordingForm#0;class#Person#0" expanded="false" />
-                <element signature="method#transferForm#0;class#Person#0" expanded="false" />
-                <element signature="method#transferFio#0;class#Person#0" expanded="false" />
                 <element signature="method#hasThreeNames#0;class#Person#0" expanded="false" />
                 <element signature="method#hasTwoNames#0;class#Person#0" expanded="false" />
               </folding>
@@ -78,9 +83,11 @@
       <file leaf-file-name="FIO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="35">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding>
+                <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,11 +95,12 @@
       <file leaf-file-name="Form.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding>
                 <element signature="e#467#468#0" expanded="true" />
                 <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
                 <element signature="e#600#601#0" expanded="true" />
                 <element signature="e#627#628#0" expanded="true" />
@@ -119,7 +127,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -138,11 +146,11 @@
         <option value="$PROJECT_DIR$/src/SwitchingForms.java" />
         <option value="$PROJECT_DIR$/src/Person.form" />
         <option value="$PROJECT_DIR$/src/Loader.java" />
-        <option value="$PROJECT_DIR$/src/Form.java" />
         <option value="$USER_HOME$/Downloads/TwoForm/src/Person.java" />
+        <option value="$PROJECT_DIR$/src/Form.java" />
+        <option value="$PROJECT_DIR$/src/FIO.java" />
         <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/src/MyFrame.java" />
-        <option value="$PROJECT_DIR$/src/FIO.java" />
       </list>
     </option>
   </component>
@@ -674,41 +682,41 @@
       <workItem from="1463402649083" duration="4038000" />
       <workItem from="1463461982846" duration="18428000" />
       <workItem from="1463484608635" duration="10000" />
-      <workItem from="1463547762842" duration="160000" />
+      <workItem from="1463547762842" duration="9164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69982000" />
+    <option name="totallyTimeSpent" value="78986000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3927987" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3927987" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -737,12 +745,13 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="person" language="JAVA" custom="" />
         <watch expression="fio.progressBar.getValue()" language="JAVA" custom="" />
+        <watch expression="person = {Person@1816} " />
       </configuration>
     </watches-manager>
   </component>
@@ -755,7 +764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -774,6 +785,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -807,7 +819,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -826,6 +840,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -845,7 +860,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,6 +888,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -890,7 +908,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,6 +936,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -935,7 +956,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -968,6 +991,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -987,7 +1011,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,6 +1046,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -1039,7 +1066,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,6 +1101,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -1091,7 +1121,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,6 +1156,7 @@
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -1143,7 +1176,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,6 +1237,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Пк/Уроки/4 модуль/StringExperiments 4.5/src/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Пк/Уроки/4 модуль/StringExperiments 4.7/src/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1212,11 +1261,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -1234,12 +1284,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+        <state relative-caret-position="221">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MyFrame#0;class#MyFrame#0" expanded="false" />
-            <element signature="class#534:704" expanded="false" />
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
             <element signature="class#951:1322" expanded="false" />
@@ -1256,38 +1305,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+        <state relative-caret-position="272">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
             <element signature="method#splitFio#0;class#Person#0" expanded="false" />
-            <element signature="method#recordingForm#0;class#Person#0" expanded="false" />
-            <element signature="method#transferForm#0;class#Person#0" expanded="false" />
-            <element signature="method#transferFio#0;class#Person#0" expanded="false" />
             <element signature="method#hasThreeNames#0;class#Person#0" expanded="false" />
             <element signature="method#hasTwoNames#0;class#Person#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Пк/Уроки/4 модуль/StringExperiments 4.5/src/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Пк/Уроки/4 модуль/StringExperiments 4.7/src/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="35">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="method#getPerson#0;class#FIO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

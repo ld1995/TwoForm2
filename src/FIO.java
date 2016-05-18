@@ -79,4 +79,22 @@ public class FIO
     public void setProgressBar(int i) {
         this.progressBar.setValue(i);
     }
+
+    public void setPerson(Person person)
+    {
+       person.splitFio(getFio().getText());
+    }
+
+    public Person getPerson(Person person)
+    {
+        if(person.hasThreeNames())
+        {
+            setFio(person.getFastName()+ " " + person.getLastName()+" " + person.getSecondName());
+        }
+        else if (person.hasTwoNames())
+        {
+            setFio(person.getFastName()+ " " + person.getLastName());
+        }
+        return person;
+    }
 }
