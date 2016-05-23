@@ -20,7 +20,7 @@ public class MyFrame extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                firstForm();
+                switching();
             }
         });
 
@@ -32,14 +32,7 @@ public class MyFrame extends JFrame
             @Override
             public void actionPerformed(ActionEvent actionEvent)
             {
-                if(getContentPane()==form.getRootPanel())
-                {
-                    firstForm();
-                }
-                else
-                {
-                    switchingFio();
-                }
+                switching();
             }
         });
 
@@ -48,68 +41,61 @@ public class MyFrame extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                switchingFio();
+                switching();
             }
         });
     }
 
-    private void firstForm()
+    private boolean firstForm(Person person)
     {
-        if (form.getFast().getText().trim().equals(""))
+        if (person.hasntControlFastAndLast())
         {
             JOptionPane.showMessageDialog(form.getRootPanel(),
-                    "Заполните поле Фамилии",
-                    "Фамилия",
+                    "Заполните поля фамилии и имени!",
+                    "Фамилия и имя",
                     JOptionPane.ERROR_MESSAGE);
+            return false;
         }
-        else if (form.getLast().getText().trim().equals(""))
-        {
-            JOptionPane.showMessageDialog(form.getRootPanel(),
-                    "Заполните поле Имени",
-                    "Имя",
-                    JOptionPane.ERROR_MESSAGE);
-        }
-        else if (form.getSecond().getText().trim().equals(""))
+        else if (person.hasntControlSecond())
         {
             int option = JOptionPane.showConfirmDialog(form.getRootPanel(),
-                    "Уверены ли Вы в том, что не хотите установить отчество",
+                    "Уверены ли Вы в том, что не хотите установить отчество?",
                     "Отчество",
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.WARNING_MESSAGE);
-            if (option == JOptionPane.YES_OPTION)
-            {
-                switchingForm();
-            }
-            else
+            if (option == JOptionPane.NO_OPTION)
             {
                 form.getSecond().requestFocusInWindow();
+                return false;
+            }
+            else
+                return true;
+        }
+        else
+            return true;
+    }
+
+    private void switching()
+    {
+        Person getPersonForm = form.getPerson();
+        Person getPersonFio = fio.getPerson();
+
+        if (getContentPane() == form.getRootPanel())
+        {
+            if (firstForm(getPersonForm))
+            {
+                fio.setPerson(getPersonForm);
+                setContentPane(fio.getPanelFIO());
             }
         }
         else
         {
-            switchingForm();
+            if (person.hasСontrolFio(getPersonFio))
+            {
+                form.setPerson(getPersonFio);
+                setContentPane(form.getRootPanel());
+            }
         }
-    }
-
-    private void switchingForm()
-    {
-        form.setPerson(person);
-        fio.getPerson(person);
-        fio.setProgressBar(fio.getProgressBar().getMaximum());
-        setContentPane(fio.getPanelFIO());
-        switching();
-    }
-
-    public void switchingFio()
-    {
-        fio.setPerson(person);
-        form.getPerson(person);
-        setContentPane(form.getRootPanel());
-        switching();
-    }
-
-    public void switching()
-    {
         getContentPane().revalidate();
         getContentPane().repaint();
     }

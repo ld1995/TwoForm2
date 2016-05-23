@@ -1,9 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 
 public class Form
 {
@@ -49,16 +44,14 @@ public class Form
 
     public void setPerson(Person person)
     {
-       person.setFastName(getFast().getText());
-       person.setLastName(getLast().getText());
-       person.setSecondName(getSecond().getText());
+       setFast(person.getFastName());
+       setLast(person.getLastName());
+       setSecond(person.getSecondName());
     }
 
-    public Person getPerson(Person person)
+    public Person getPerson()
     {
-        setFast(person.getFastName());
-        setLast(person.getLastName());
-        setSecond(person.getSecondName());
+        Person person = new Person(getFast().getText(),getLast().getText(),getSecond().getText());
         return person;
     }
 }

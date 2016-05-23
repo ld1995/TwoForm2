@@ -1,10 +1,8 @@
-import com.sun.xml.internal.ws.api.server.DocumentAddressResolver;
-
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import java.awt.*;
-import java.awt.event.*;
+import javax.swing.text.Document;
+
 
 public class FIO
 {
@@ -13,42 +11,28 @@ public class FIO
     private JTextField Fio;
     private JProgressBar progressBar;
 
-    private int type = 3;
-
     public FIO()
     {
         progressBar.setStringPainted(true);
         progressBar.setMinimum(0);
-        progressBar.setMaximum(100);
-        Fio.addKeyListener(new KeyAdapter() {
+        progressBar.setMaximum(30);
+        Fio.getDocument().addDocumentListener(new DocumentListener()
+        {
             @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                if (e.getKeyCode()== KeyEvent.VK_BACK_SPACE || e.getKeyCode()== KeyEvent.VK_DELETE)
-                {
-                    progressBar.setValue(progressBar.getValue()-type);
-                    if(Fio.getText().equals(""))
-                    {
-                        progressBar.setValue(progressBar.getMinimum());
-                    }
-                }
-                else if (e.getKeyCode()== KeyEvent.VK_V && e.isControlDown())
-                {
-                    progressBar.setValue(progressBar.getMaximum());
-                }
-                else if (e.getKeyCode()== KeyEvent.VK_X && e.isControlDown())
-                {
-                    progressBar.setValue(progressBar.getMinimum());
-                }
-                else if (e.getKeyCode()== KeyEvent.VK_DOWN || e.getKeyCode()== KeyEvent.VK_UP  ||
-                        e.getKeyCode()== KeyEvent.VK_LEFT || e.getKeyCode()== KeyEvent.VK_RIGHT
-                        || e.getKeyCode()== KeyEvent.VK_CONTROL )
-                {
-                }
-                else
-                {
-                    progressBar.setValue(progressBar.getValue()+type);
-                }
+            public void changedUpdate(DocumentEvent documentEvent)
+            {
+             print(documentEvent);
+            }
+            public void insertUpdate(DocumentEvent documentEvent) {
+                print(documentEvent);
+            }
+            public void removeUpdate(DocumentEvent documentEvent) {
+                print(documentEvent);
+            }
+            private void print(DocumentEvent documentEvent) {
+                Document source = documentEvent.getDocument();
+                int length = source.getLength();
+                progressBar.setValue(length);
             }
         });
     }
@@ -72,29 +56,26 @@ public class FIO
         this.Fio.setText(fio);
     }
 
-    public JProgressBar getProgressBar() {
-        return progressBar;
-    }
-
-    public void setProgressBar(int i) {
-        this.progressBar.setValue(i);
-    }
-
     public void setPerson(Person person)
     {
-       person.splitFio(getFio().getText());
+        setFio(person.getFastName().trim() + " "
+                + person.getLastName().trim() + " "
+                + person.getSecondName().trim());
     }
 
-    public Person getPerson(Person person)
+    public Person getPerson()
     {
-        if(person.hasThreeNames())
+        String fast = "";
+        String last = "";
+        String second = "";
+        String fIOUser[] = getFio().getText().trim().split("\\s+");
+        if(fIOUser.length == 3)
         {
-            setFio(person.getFastName()+ " " + person.getLastName()+" " + person.getSecondName());
+            fast = fIOUser[0];
+            last = fIOUser[1];
+            second = fIOUser[2];
         }
-        else if (person.hasTwoNames())
-        {
-            setFio(person.getFastName()+ " " + person.getLastName());
-        }
+        Person person = new Person(fast,last,second);
         return person;
     }
 }

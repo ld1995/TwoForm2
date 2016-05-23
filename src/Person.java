@@ -9,38 +9,47 @@ public class Person
     {
 
     }
-    //=======================================================================
-    public Person splitFio(String fio)
+
+    public Person(String fastName, String lastName, String secondName)
     {
-        String fIOUser[] = fio.split("\\s+");
-        if(fIOUser.length == 3) {
-            if (fIOUser[0].matches("^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$")) {
-                setFastName(fIOUser[0]);
-            }
-            if (fIOUser[1].matches("^[А-ЯЁ][а-яё]+$")) {
-                setLastName(fIOUser[1]);
-            }
-            if (fIOUser[2].matches("^[А-ЯЁ][а-яё]+$")) {
-                setSecondName(fIOUser[2]);
-            }
+        this.fastName = fastName;
+        this.lastName = lastName;
+        this.secondName = secondName;
+    }
+    //=======================================================================
+    public boolean hasСontrolFio(Person person)
+    {
+        if (person.getFastName().trim().isEmpty() &&
+                person.getLastName().trim().isEmpty() &&
+                person.getSecondName().trim().isEmpty())
+        {
+            return false;
         }
-        Person person = new Person();
-        return person;
+        else
+            return true;
     }
 
-   public boolean hasThreeNames()
+    public boolean hasntControlSecond()
     {
-        return getLastName().trim().matches("^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$") &&
-                getFastName().trim().matches("^[А-ЯЁ][а-яё]+$") &&
-                getSecondName().trim().matches("^[А-ЯЁ][а-яё]+$");
+        if (!getSecondName().trim().isEmpty())
+        {
+            return false;
+        }
+        else
+            return true;
     }
 
-    public boolean hasTwoNames()
+    public boolean hasntControlFastAndLast()
     {
-        return getLastName().trim().matches("^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$") &&
-                getFastName().trim().matches("^[А-ЯЁ][а-яё]+$");
+        if (!getFastName().trim().isEmpty() && !getLastName().trim().isEmpty())
+        {
+            return false;
+        }
+        else
+            return true;
     }
     //=======================================================================
+
     public String getLastName()
     {
         return lastName;
@@ -56,17 +65,17 @@ public class Person
         return secondName;
     }
 
-    public void setLastName(String lastName)
+    protected void setLastName(String lastName)
     {
         this.lastName = lastName;
     }
 
-    public void setFastName(String fastName)
+    protected void setFastName(String fastName)
     {
         this.fastName = fastName;
     }
 
-    public void setSecondName(String secondName)
+    protected void setSecondName(String secondName)
     {
         this.secondName = secondName;
     }
